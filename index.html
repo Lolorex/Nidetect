@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nidetect – Etsy Marketplace Trends</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('NidetectBackground.png') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    header {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 2rem 3rem;
+      max-width: 700px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-top: 0;
+      color: white;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: white;
+    }
+
+    footer {
+      padding: 1rem;
+      font-size: 0.8rem;
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="Nidetect_Logo_White.svg" alt="Nidetect Logo">
+    <h1>Nidetect</h1>
+  </header>
+
+  <!-- Main translucent card -->
+  <main>
+    <div class="card">
+      <h2>Discover Etsy Marketplace Trends</h2>
+      <p>
+        Nidetect is a research tool for Etsy sellers. It analyzes publicly available marketplace data via Etsy’s official API to identify trending product niches, especially for small and new shops. Our goal is to help independent creators discover opportunities and grow their businesses.
+      </p>
+      <p>
+        With Nidetect, sellers can spot high-demand, low-competition niches and make smarter decisions about their products and marketing.
+      </p>
+      <p><strong>Coming Soon:</strong> Live trend detection and niche analytics.</p>
+    </div>
+  </main>
+
+  <!-- Footer with Etsy disclaimer -->
+  <footer>
+    The term “Etsy” is a trademark of Etsy, Inc. This application uses the Etsy API but is not endorsed or certified by Etsy, Inc.
+  </footer>
+
+</body>
+</html>
