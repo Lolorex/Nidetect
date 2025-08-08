@@ -9,32 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: 'Montserrat', sans-serif;
-      background: url('NidetectBackground.png') no-repeat center center/cover;
-      min-height: 100vh;
+      background: url('NidetectBackground.jpg') no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* Prevents scrolling */
       display: flex;
       flex-direction: column;
-      align-items: center;
       color: white;
     }
 
+    /* Header centered at top */
     header {
       width: 100%;
-      padding: 1.5rem 2rem;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: 0.5rem;
+      padding: 1.5rem 0;
+      position: relative;
+      z-index: 2;
     }
     header img {
-      height: 50px;
+      height: 40px;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 1.8rem;
       font-weight: 600;
       margin: 0;
+      line-height: 40px; /* Matches logo height */
     }
 
     main {
@@ -42,12 +49,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(20px);
       border-radius: 20px;
       padding: 2rem 3rem;
@@ -67,17 +75,19 @@
     }
 
     footer {
-      padding: 1rem;
+      padding: 0.8rem;
       font-size: 0.8rem;
       text-align: center;
       background: rgba(0,0,0,0.4);
       width: 100%;
+      position: relative;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header (centered) -->
   <header>
     <img src="Nidetect_Logo_White.svg" alt="Nidetect Logo">
     <h1>Nidetect</h1>
